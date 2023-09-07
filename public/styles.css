@@ -1,0 +1,174 @@
+body{
+    background-color:#80dfff;
+}
+
+.para {
+    width: 400px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically align items */
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+}
+
+.para p {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for spacing */
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(99, 98, 98);
+}
+
+.items, .log{
+    width: 380px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:aliceblue;
+    color:rgb(42, 41, 41);
+    font-size:large;
+    font-family:sans-serif;;
+    font-weight: 400;
+    padding-top: 7px ;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(141, 140, 140);
+}
+.items div,.log div{
+    display:flex ;
+    align-items: center;
+    list-style: none;
+    list-style-type: none;
+    background-color: aliceblue;
+    border-width: 2px 0 0px;
+    border-color:#939696;
+    padding-bottom: 2px;
+    border-style: solid;
+    margin:0px auto 4px;
+
+}
+
+.form,.log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eaeeeee5;
+    padding-left: 10px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+.input{
+    flex: 1 ;
+    border:none;
+    background: transparent;
+    font-size: medium;
+    outline: none;
+    padding: 5px;
+    margin:2px auto 2px;
+}
+button{
+    border: none;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#8c8d8de5;
+    color: aliceblue;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+
+input[type=checkbox]:checked {
+    text-decoration: line-through;
+  } 
+
+  input[type="date"] {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Add spacing between p and input */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('imgs/calender image.jpg') no-repeat center center;
+    background-size: contain;
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.log div{
+    border-style: none;
+    background-color: transparent;
+}
+
+#username, #password
+{
+    flex: 1 ;
+    background-color:#eaeeeee5;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 5px;
+    border-color: #939696;
+    margin:2px auto 2px;
+}
+.log button{
+    border: none;
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    background:rgb(155, 156, 156);
+    color: aliceblue;
+    font-size: x-large;
+    cursor: pointer;
+}
+.log label{
+    margin-right: 10px;
+}
+.log{
+    margin-top: 100px;
+}
+h1{
+    color:rgb(102, 103, 104);
+}
+
+.paraname {
+    margin: 0 auto 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; /* Vertically align items */
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 1.2px 1.2px 1.2px rgb(146, 146, 146);
+}
+
+.paraname p {
+    margin: 4px 20px 4px;
+    padding: 2px; /* Add padding for spacing */
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(99, 98, 98);
+}
+.paraname button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin:4px 20px 4px ;
+    border-radius: 10px;
+    background:rgb(155, 156, 156);
+    color: aliceblue;
+    font-size: large;
+    cursor: pointer;
+}
+

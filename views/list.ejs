@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div  class="paraname">
+        <p> user: <%= n %>  </p>
+        <form  action="/logout" method="get">
+            <button  type="submit">logout</button>
+        </form>
+    </div>
+    <form id="dateForm" action="/input" method="post">
+        <div  class="para">
+            <p><%= date %>  </p>
+        <input type="date" id="datePicker" name="date" value="<%= date %>">
+        </div>
+    </form>
+
+    <section class="items">
+        <% for(let i=0; i<items.length ;i++) {%>
+            <form action="/delete" method="post">
+            <div class="eachone"> 
+                <input type="checkbox" class="checkbox" value="<%= items[i]._id %>" onChange="this.form.submit()" name="itemdel"> 
+                 <%= items[i].item %> 
+            </div>
+            </form>
+        <% } %>
+        <form  class="form" action="/insert" method="post">
+            <input class="input" type="text" name ="additem" autocomplete="off">
+            <button class="button" type="submit">+</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
+
